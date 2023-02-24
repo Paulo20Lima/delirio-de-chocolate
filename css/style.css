@@ -1,0 +1,320 @@
+/* formatar tudo */
+*{
+    list-style: none;
+    text-decoration: none;   
+}
+/* acessibilidade */
+#btnFonteMais{
+	background-color: var(--color-bg2);
+    color: var(--color-text);
+}
+#btnFonteMenos{
+	background-color: var(--color-bg2);
+    color: var(--color-text);
+}
+#btnFonteMais, #btnFonteMenos{
+    background-color: #40031e;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+}
+.row{
+    margin: 0;
+}
+.container{
+    padding: 70px 0;
+}
+ li{
+    color: #111;
+    font-size: 17px;
+}
+/* menu */
+.navbar, header, footer{
+    background-color: #301502;
+    font-family: 'Roboto', sans-serif;
+}
+#nav-container{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#logo{
+    width: 75px;
+	border-radius: 30px;
+}
+.navbar-brand{
+    padding: 0;
+    color: #fff;
+}
+#navbar-links a{
+    color: #F5F5DC;
+}
+#navbar-links a:hover{
+    color: #FFC0CB;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 1rem .8rem;
+}
+#text-logo{
+    color: #F5F5DC;
+}
+#text-logo:hover{
+    color: #FFC0CB;
+}
+.btn-link{
+    margin-top: 6.8px;
+    color:  #F5F5DC;
+    font-weight: bold;
+}
+.btn-link:hover{
+    color:  #F5F5DC;
+}
+.navbar-nav a{
+    margin-right: 5px;
+}
+.container-fluid{
+    padding: 0;
+}
+.main-btn{
+    background-color: 	#FFC0CB;
+    color: #111;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s
+}
+.main-btn:hover{
+    text-decoration: none;
+    color: #111;
+    background-color: transparent;
+    border-color: #FFC0CB;
+}
+/* about-area */
+.about-title{
+    color: #665D1E;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.main-title{
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+.main-title::after{
+    content: "";
+    border-top: 2px solid #665D1E;
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+}
+#banner-container{
+	background-position: center;
+}
+#aviso-equipe{
+    font-weight: bold;
+    color: #182f54;
+}
+p{
+    font-size: 17px;
+}
+/* pagamentos */
+#pagamentos-area img{
+    margin-top: 30px;
+    border-radius: 5px;
+	width: 50%;
+}
+#pagamentos-area{
+    margin: 100px;
+}
+/* dados */
+.circle-box div{
+    padding: 0 40px;
+}
+.progressbar-text{
+    font-weight: bold;
+    font-size: 32px;
+}
+#data-area{
+    margin-top: 100px;
+}
+#data-area p{
+    color: #fff;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 20px;
+}
+/* área de contato */
+#contact-area{
+    text-align: center;
+}
+.contact-box{
+    margin-top: 30px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+.contact-box i{
+    font-size: 25px;
+    border: 1px solid #111;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    margin-bottom: 20px;
+
+}
+#contact-area .fa-instagram{
+    color: #870540;
+    font-size: 30px;
+}
+#contact-area .fa-whatsapp{
+    color: #4b6105;
+    font-size: 30px;
+}
+.fa-instagram{
+    color: #bfbaac;
+    font-size: 30px;
+}
+.fa-whatsapp{
+    color: #bfbaac;
+    font-size: 30px;
+}
+.fa{
+    font-size: 30px;
+    font-weight: bold;
+}
+#youtube{
+    color: #bfbaac;
+}
+#twitter{
+    color:  #bfbaac;
+}
+#facebook{
+    color: #bfbaac;
+}
+#youtube:hover{
+    color: #f57c78;
+}
+#twitter:hover{
+    color: #00acee;
+}
+#facebook:hover{
+    color: #88a8eb;
+}
+.fa-whatsapp:hover{
+    color: #d8f57d;
+}
+.fa-instagram:hover{
+    color: #f77eb6;
+    
+}
+.contact-title{
+    font-weight: bold;
+    color: #111;
+}
+/* jumbotron */
+.jumbotron{
+    background-color: #FFC0CB;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* rodapé */
+footer{
+    width:100%;
+    height:auto;
+    padding-bottom:20px;
+}
+.flex-footer{
+    margin-top: -29px;
+    height:auto;
+    color:#F5F5DC;
+    padding-top:30px;
+    display:flex;
+    justify-content: space-around;
+}
+ul.menu-footer li a{
+    color:#F5F5DC;
+}
+ul.menu-footer li a:hover{
+    color: #FFC0CB;
+}
+.telefone{
+    font-size: 1.20rem;
+}
+ #midias .fa{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 60px;
+    background: #331605;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 15px#4d2f1c;
+    transition: .5s;
+    line-height: 50px;
+    cursor: pointer;
+}
+/* responsividade: tablet */
+@media(max-width: 1280px){
+     /* rodapé */
+     .flex-footer-item{
+        height: 550px;
+    }
+    .menu-footer, #midias{
+        margin-left: 50px;
+    }
+    footer{
+        width: 100%;
+        padding: 20px;
+        height: 1000px;
+    }
+    /* parallax */
+    #data-area .container{
+        width: 100%;
+        height: 400px;
+    }
+    /* dados */
+   .circle-box div{
+    padding: 0 20px;
+   }
+   .progressbar-text{
+       font-weight: bold;
+       font-size: 16px;
+   }
+   #data-area{
+       margin-top: 100px;
+   }
+   #data-area p{
+       color: #fff;
+       text-align: center;
+       font-size: 17px;
+}
+}
+@media(max-width: 540px){
+    #data-area{
+      display: none;
+    }
+    footer{
+        width: 100%;
+        padding: 20px;
+        height: 700px;
+    }
+    .jumbotron img{
+        width: 280px;
+    }
+    #pagamentos-area img{
+        width: 170px;
+    }
+    .main-title::after{
+        display: none;
+    }
+}
+
+

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Delírio de Chocolate</title>
+  <link rel="shortcut icon" href="img/logo.jpg" id="favicon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style4.css">
+  <!-- Scripts -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Progress Bar -->
+  <script src="js/progressbar.min.js"></script>
+  <!-- Parallax -->
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+</head>
+<body>
+  <header>
+    <div class="container" id="nav-container">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <a class="navbar-brand" href="index.html">
+          <img id="logo" src="img/logo.jpg" alt="Logo Delírio de Chocolate"> <span id="text-logo">Delírio de Chocolate</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" id="inicio-menu" href="index.html">Início</span></a>
+            <a class="nav-item nav-link" id="sobre-menu" href="sobre.html">Sobre</a>
+            <a class="nav-item nav-link" id="cardapios-menu" href="cardapio.html">Cardápio</a>
+            <a class="nav-item nav-link" id="contato-menu" href="contato.html">Contato</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <div id="banner-container">
+      <img src="img/doce4.jpg" class="d-block w-100" alt="Imagem decorativa com brigadeiros kinder, casadinho, M&M, oreo, ninho com nutella e beijinhos">
+      </div>
+      <div class="mt-5 conatiner">
+      <input type="submit" value="+" id="btnFonteMais">
+	    <input type="submit" value="-" id="btnFonteMenos"><br><br>
+          <div class="text-center">
+              <h3 class="titulo">Quer fazer um pedido personalizável ou falar conosco?</h3>
+              <p class="lead">Entre em contato por aqui</p>
+          </div>
+          <div class=" d-flex align-items-center justify-content-center">
+              <div class="bg-white col-md-4">
+                <form action="fazer_contato.php" id="contato" method="post">
+                  <fieldset>
+                  <div class="p-4 rounded shadow-md">
+                      <div>
+                          <label for="name" class="form-label">Digite seu nome</label>
+                          <input type="text" name="nome" id="nome" class="form-control" placeholder="Ex.: Paulo" required>
+                      </div>
+                      <div class="mt-3">
+                          <label for="email" class="form-label">Digite seu e-mail</label>
+                          <input type="text" name="email" id="email" class="form-control" placeholder="Ex.: teste@gmail.com" required>
+                      </div class="mt-3"> 
+                      <div class="mt-3">
+                          <label for="subject" class="form-label">Assunto</label><br>
+                          <select name="assunto" class="form-control">
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="pedidosP">Pedidos Personalizáveis</option>
+                            <option value="duvidas">Dúvidas</option>
+                            <option value="feedbacks">Feedbacks</option>
+                            <option value="reclamacoes">Reclamações</option>
+                            <option value="outroA">Outro assunto</option>
+                          </select>
+                      </div>
+                      <div class="mt-3 mb-2">
+                          <label for="message" class="form-label">Mensagem</label>
+                          <textarea name="message" id="message" cols="20" rows="6" class="form-control" placeholder="Digite aqui a sua mensagem"
+                             ></textarea>
+                      </div>
+                      <button class="btn btn-dark" type="submit" id="send" name="send">
+                        Enviar mensagem
+                      </button>
+                  </div>
+              </div>
+            </fieldset>
+            </form>
+          </div>
+      </div>
+      </div>
+      </main>
+      <!-- rodapé -->
+      <footer class="top">
+        <div class="flex-footer container">
+            <div class="flex-footer-item">
+                <b><p><span style="font-size:1.5em;">Delírio de Chocolate</span><br></p><br></b>
+      <p><span class="telefone">Telefone: 0000000</span><br></p><br><hr>
+      <b><p><span style="font-size:1.5em;"><i>Copyright</i></span></p></b>
+            <p>&copy; 2022 - Todos os Direitos Reservados</p>
+            </div>
+            <div class="flex-footer-item">
+              <div id="midias">
+              <a href="https://instagram.com/delirio_de_chocolate?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa fa-instagram" alt="Logo Instagram"></i></a>
+                <i class="fa fa-whatsapp" alt="Logo WhatsApp"></i>
+                <i class="fa" id="youtube" alt="Logo Youtube">&#xf16a;</i>
+                <i class="fa" id="twitter" alt="Logo Twitter">&#xf081;</i>
+                <i class="fa" id="facebook" alt="Logo Facebook">&#xf09a;</i>
+              </div>
+              </div>
+        </div>
+    </footer>
+        <script src="js/script4.js"></script>
+    </body>
+</html>
